@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="QPikachu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cca-Oc-ZBR" kind="relationship" relationship="viewControllers" id="B41-vn-XyD"/>
+                        <segue destination="mht-Kq-sOG" kind="relationship" relationship="viewControllers" id="OQz-GX-hcc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--个人信息-->
+        <scene sceneID="NRy-HL-m4d">
+            <objects>
+                <viewController id="U69-rY-Hl7" customClass="SecondMainViewController" customModule="QPikachu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfA-PV-eda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Unr-Pd-30h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="147.33333333333334"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Unr-Pd-30h" firstAttribute="trailing" secondItem="1tI-da-8Xw" secondAttribute="trailing" id="9ow-ym-fUc"/>
+                            <constraint firstItem="Unr-Pd-30h" firstAttribute="top" secondItem="1tI-da-8Xw" secondAttribute="top" id="MNN-OO-HlX"/>
+                            <constraint firstItem="Unr-Pd-30h" firstAttribute="height" secondItem="gfA-PV-eda" secondAttribute="height" multiplier="1:5" id="OcG-yL-cjU"/>
+                            <constraint firstItem="Unr-Pd-30h" firstAttribute="leading" secondItem="1tI-da-8Xw" secondAttribute="leading" id="qPw-5G-gy8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1tI-da-8Xw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="个人信息" id="hYS-kk-mNx">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="gear" id="w8K-rK-4oJ">
+                            <connections>
+                                <segue destination="YTF-gD-WSd" kind="show" id="tbf-C7-7Pl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UF6-5E-W47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795.6521739130437" y="373.36956521739131"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="DKc-sA-3g4">
+            <objects>
+                <viewController id="YTF-gD-WSd" customClass="SettingViewController" customModule="QPikachu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f9T-bY-5ca">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mCu-G8-co9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="LMg-0q-FhY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ws-AI-Eto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2695" y="374"/>
+        </scene>
+        <!--游泳-->
+        <scene sceneID="AdH-C5-CMk">
+            <objects>
+                <viewController id="pYt-sB-hKA" customClass="FirstMainViewController" customModule="QPikachu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDf-jR-62t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLz-qO-vol">
+                                <rect key="frame" x="0.0" y="44" width="414" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="G6v-WF-oHg"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-xL-9mp">
+                                <rect key="frame" x="0.0" y="292" width="414" height="395"/>
+                                <connections>
+                                    <segue destination="Rxk-Eo-3cy" kind="embed" id="6lA-vg-Q6y"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XLz-qO-vol" firstAttribute="trailing" secondItem="TcI-Sx-ymS" secondAttribute="trailing" id="0cM-de-eFN"/>
+                            <constraint firstItem="XLz-qO-vol" firstAttribute="leading" secondItem="TcI-Sx-ymS" secondAttribute="leading" id="4zd-No-zqQ"/>
+                            <constraint firstItem="wtm-xL-9mp" firstAttribute="bottom" secondItem="TcI-Sx-ymS" secondAttribute="bottom" id="A6A-0R-9if"/>
+                            <constraint firstItem="wtm-xL-9mp" firstAttribute="trailing" secondItem="TcI-Sx-ymS" secondAttribute="trailing" id="ahi-WI-ne0"/>
+                            <constraint firstItem="XLz-qO-vol" firstAttribute="top" secondItem="TcI-Sx-ymS" secondAttribute="top" id="fNF-d4-4SB"/>
+                            <constraint firstItem="wtm-xL-9mp" firstAttribute="top" secondItem="XLz-qO-vol" secondAttribute="bottom" constant="8" id="idw-PV-cpc"/>
+                            <constraint firstItem="wtm-xL-9mp" firstAttribute="leading" secondItem="TcI-Sx-ymS" secondAttribute="leading" id="zFA-JJ-vk1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TcI-Sx-ymS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="游泳" id="cib-ja-I5T"/>
+                    <connections>
+                        <outlet property="videoView" destination="XLz-qO-vol" id="aEG-Ob-UZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3O-aX-42W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="-309.89505247376314"/>
+        </scene>
+        <!--游泳-->
+        <scene sceneID="1NL-WM-NMg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cca-Oc-ZBR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="游泳" image="swim" id="g1G-Fx-1kX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4cf-X3-6WU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.34393728600000001" green="0.53725490200000003" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pYt-sB-hKA" kind="relationship" relationship="rootViewController" id="RQm-FN-ePa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kq-Zk-ifp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="-309.89505247376314"/>
+        </scene>
+        <!--个人信息-->
+        <scene sceneID="uzZ-Db-ooR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mht-Kq-sOG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人信息" image="user" id="WTH-kT-STI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="luf-nV-zBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.34393728600000001" green="0.53725490200000003" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="U69-rY-Hl7" kind="relationship" relationship="rootViewController" id="cjn-Mn-Nbh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRt-vE-Jzk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="373.76311844077964"/>
+        </scene>
+        <!--Embed Table View Controller For First Main-->
+        <scene sceneID="U8d-My-ObG">
+            <objects>
+                <tableViewController id="Rxk-Eo-3cy" customClass="EmbedTableViewControllerForFirstMain" customModule="QPikachu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="g1y-ha-nHW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="395"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection id="CyN-T2-y7o">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="187" id="IvO-IZ-13L">
+                                        <rect key="frame" x="20" y="18" width="374" height="187"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IvO-IZ-13L" id="mJ1-c9-HNw">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeChatc6708efb93c77976f26627ba5f784a53" translatesAutoresizingMaskIntoConstraints="NO" id="23P-w2-5Iz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="187"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游泳历史记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46h-Xw-aUW">
+                                                    <rect key="frame" x="97" y="72" width="180" height="43"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="23P-w2-5Iz" firstAttribute="top" secondItem="mJ1-c9-HNw" secondAttribute="top" id="8cD-cd-GFr"/>
+                                                <constraint firstAttribute="bottom" secondItem="23P-w2-5Iz" secondAttribute="bottom" id="Icw-gs-eY4"/>
+                                                <constraint firstItem="46h-Xw-aUW" firstAttribute="centerX" secondItem="mJ1-c9-HNw" secondAttribute="centerX" id="dJR-JY-E8N"/>
+                                                <constraint firstItem="46h-Xw-aUW" firstAttribute="centerY" secondItem="mJ1-c9-HNw" secondAttribute="centerY" id="i44-aa-reb"/>
+                                                <constraint firstItem="23P-w2-5Iz" firstAttribute="leading" secondItem="mJ1-c9-HNw" secondAttribute="leading" id="o9x-3F-Leh"/>
+                                                <constraint firstAttribute="trailing" secondItem="23P-w2-5Iz" secondAttribute="trailing" id="wUB-cl-RyO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="zbd-OE-ELa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="187" id="S80-WI-Ebh">
+                                        <rect key="frame" x="20" y="241" width="374" height="187"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S80-WI-Ebh" id="tj8-cG-e7D">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeChatd14c79c6abb414b3cd960b03c40b9005" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-BH-9pw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="187"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游泳教学指导" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-m6-MFA">
+                                                    <rect key="frame" x="96" y="75.666666666666671" width="182" height="36"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gZ4-BH-9pw" firstAttribute="top" secondItem="tj8-cG-e7D" secondAttribute="top" id="7Lw-jz-uAN"/>
+                                                <constraint firstItem="ndA-m6-MFA" firstAttribute="centerY" secondItem="tj8-cG-e7D" secondAttribute="centerY" id="A33-WW-hug"/>
+                                                <constraint firstItem="gZ4-BH-9pw" firstAttribute="leading" secondItem="tj8-cG-e7D" secondAttribute="leading" id="Hmu-8C-ud3"/>
+                                                <constraint firstAttribute="trailing" secondItem="gZ4-BH-9pw" secondAttribute="trailing" id="IXa-Fm-Nfd"/>
+                                                <constraint firstItem="ndA-m6-MFA" firstAttribute="centerX" secondItem="tj8-cG-e7D" secondAttribute="centerX" id="XSJ-oR-psZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="gZ4-BH-9pw" secondAttribute="bottom" id="eXg-fe-bpg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Rxk-Eo-3cy" id="Xfw-vY-8yn"/>
+                            <outlet property="delegate" destination="Rxk-Eo-3cy" id="5jl-LP-Y14"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="recordImage" destination="23P-w2-5Iz" id="8rM-2M-Zbw"/>
+                        <outlet property="teachingImage" destination="gZ4-BH-9pw" id="aba-NK-fxd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrs-ki-BKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="-889.65517241379314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeChatc6708efb93c77976f26627ba5f784a53" width="316" height="200"/>
+        <image name="WeChatd14c79c6abb414b3cd960b03c40b9005" width="316.66665649414062" height="194.66667175292969"/>
+        <image name="gear" width="21" height="21"/>
+        <image name="swim" width="28" height="28"/>
+        <image name="user" width="22.666666030883789" height="27"/>
+    </resources>
+</document>
