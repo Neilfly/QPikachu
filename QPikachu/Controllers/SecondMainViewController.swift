@@ -15,7 +15,7 @@ class SecondMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backGroundImage.alpha = 0.4
+        backGroundImage.alpha = 0.5
         self.view.layoutIfNeeded()
         let headImageLayer: CALayer = headImage.layer
         headImageLayer.masksToBounds = true
