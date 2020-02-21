@@ -20,6 +20,7 @@
 		D16E746923EDBDD50063134D /* TabBarCustiomInteractionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E746823EDBDD50063134D /* TabBarCustiomInteractionAnimation.swift */; };
 		D16E746B23EE92C70063134D /* SwimmingVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D16E746A23EE92C70063134D /* SwimmingVideo.mp4 */; };
 		D16E746F23EEA5E40063134D /* EmbedTableViewControllerForFirstMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E746E23EEA5E40063134D /* EmbedTableViewControllerForFirstMain.swift */; };
+		D1C7147624001C640020390A /* PersonalDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C7147524001C640020390A /* PersonalDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D16E746823EDBDD50063134D /* TabBarCustiomInteractionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustiomInteractionAnimation.swift; sourceTree = SOURCE_ROOT; };
 		D16E746A23EE92C70063134D /* SwimmingVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwimmingVideo.mp4; sourceTree = "<group>"; };
 		D16E746E23EEA5E40063134D /* EmbedTableViewControllerForFirstMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmbedTableViewControllerForFirstMain.swift; path = QPikachu/View/EmbedTableViewControllerForFirstMain.swift; sourceTree = SOURCE_ROOT; };
+		D1C7147524001C640020390A /* PersonalDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalDetailsTableViewController.swift; path = QPikachu/View/PersonalDetailsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		D16E745A23EDB8790063134D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D1C7147524001C640020390A /* PersonalDetailsTableViewController.swift */,
 				D121A44D23F6CBAE00316E53 /* SettingViewController.swift */,
 				D16E746E23EEA5E40063134D /* EmbedTableViewControllerForFirstMain.swift */,
 				D16E745C23EDB8BC0063134D /* FirstMainViewController.swift */,
@@ -196,6 +199,7 @@
 				D16E746923EDBDD50063134D /* TabBarCustiomInteractionAnimation.swift in Sources */,
 				D16E744123EDB5790063134D /* AppDelegate.swift in Sources */,
 				D16E745923EDB8700063134D /* SecondMainViewController.swift in Sources */,
+				D1C7147624001C640020390A /* PersonalDetailsTableViewController.swift in Sources */,
 				D16E745F23EDB9560063134D /* TabBarController.swift in Sources */,
 				D121A44E23F6CBAE00316E53 /* SettingViewController.swift in Sources */,
 				D16E746F23EEA5E40063134D /* EmbedTableViewControllerForFirstMain.swift in Sources */,
