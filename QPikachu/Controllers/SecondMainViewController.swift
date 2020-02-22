@@ -26,9 +26,17 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @IBAction func changeHeadImageButton(_ sender: Any) {
-        openAlbum()
+        let alert = UIAlertController(title: "想以什么方式更改头像？", message: nil, preferredStyle: .alert)
+        let Album = UIAlertAction(title: "从相册中选取照片", style: .default) { (_) in
+            self.openAlbum()
+        }
+        let Camera = UIAlertAction(title: "拍摄照片", style: .default) { (_) in
+            self.openCamera()
+        }
+        alert.addAction(Camera)
+        alert.addAction(Album)
+        present(alert, animated: true, completion: nil)
     }
-    
     
     func openAlbum() {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
@@ -44,6 +52,19 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     
+    func openCamera() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = UIImagePickerController.SourceType.camera
+            picker.allowsEditing = true
+            self.present(picker, animated: true, completion: nil)
+        }
+        else {
+            debugPrint("找不到相机")
+        }
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         print(info)
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
@@ -51,5 +72,5 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
         picker.dismiss(animated: true, completion: nil)
     }
     
-    
 }
+

@@ -314,7 +314,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeChatd14c79c6abb414b3cd960b03c40b9005" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-BH-9pw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="187.00000000000006"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="187"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游泳教学指导" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-m6-MFA">
                                                     <rect key="frame" x="80.5" y="75.5" width="182" height="36"/>
