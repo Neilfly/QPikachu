@@ -48,19 +48,29 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-KO-GuM">
+                                        <rect key="frame" x="132" y="55.5" width="111" height="111.5"/>
+                                        <connections>
+                                            <action selector="changeHeadImageButton:" destination="U69-rY-Hl7" eventType="touchUpInside" id="Is8-Wq-AzQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="EqR-JZ-wuK" firstAttribute="top" secondItem="WlK-AB-gKa" secondAttribute="bottom" multiplier="1:0.9" id="4Ee-Dn-dFA"/>
                                     <constraint firstItem="WlK-AB-gKa" firstAttribute="height" secondItem="Unr-Pd-30h" secondAttribute="height" multiplier="1:2" id="4UQ-yf-GHi"/>
                                     <constraint firstItem="LTu-V2-1Jy" firstAttribute="leading" secondItem="Unr-Pd-30h" secondAttribute="leadingMargin" constant="-8" id="8uy-Yc-N1L"/>
+                                    <constraint firstItem="WPa-KO-GuM" firstAttribute="height" secondItem="WlK-AB-gKa" secondAttribute="height" multiplier="1:1" id="A5U-Vy-6c8"/>
                                     <constraint firstItem="WlK-AB-gKa" firstAttribute="centerY" secondItem="Unr-Pd-30h" secondAttribute="centerY" id="As0-sy-c7S"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="LTu-V2-1Jy" secondAttribute="bottom" constant="-8.5" id="CgW-qc-4ap"/>
+                                    <constraint firstItem="WPa-KO-GuM" firstAttribute="centerY" secondItem="Unr-Pd-30h" secondAttribute="centerY" id="ILM-Jk-QyI"/>
                                     <constraint firstItem="WlK-AB-gKa" firstAttribute="centerX" secondItem="Unr-Pd-30h" secondAttribute="centerX" id="Io5-1a-qli"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="LTu-V2-1Jy" secondAttribute="trailing" constant="-8" id="UTZ-NB-tiQ"/>
                                     <constraint firstItem="WlK-AB-gKa" firstAttribute="width" secondItem="Unr-Pd-30h" secondAttribute="height" multiplier="1:2" id="V5T-Bz-t7h"/>
+                                    <constraint firstItem="WPa-KO-GuM" firstAttribute="centerX" secondItem="Unr-Pd-30h" secondAttribute="centerX" id="Yfe-Bs-rQY"/>
                                     <constraint firstItem="LTu-V2-1Jy" firstAttribute="top" secondItem="Unr-Pd-30h" secondAttribute="topMargin" constant="-8" id="ZxF-Tg-hP3"/>
                                     <constraint firstItem="EqR-JZ-wuK" firstAttribute="centerX" secondItem="Unr-Pd-30h" secondAttribute="centerX" id="bae-0g-pvV"/>
+                                    <constraint firstItem="WPa-KO-GuM" firstAttribute="width" secondItem="WlK-AB-gKa" secondAttribute="width" multiplier="1:1" id="mCw-tQ-gvJ"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-Y1-gNH">
@@ -161,6 +171,7 @@
         <!--设置-->
         <scene sceneID="DKc-sA-3g4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ws-AI-Eto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="YTF-gD-WSd" customClass="SettingViewController" customModule="QPikachu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9T-bY-5ca">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -170,7 +181,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="设置" id="LMg-0q-FhY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ws-AI-Eto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2695" y="374"/>
         </scene>
@@ -304,7 +314,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeChatd14c79c6abb414b3cd960b03c40b9005" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-BH-9pw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="187"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="187.00000000000006"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游泳教学指导" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-m6-MFA">
                                                     <rect key="frame" x="80.5" y="75.5" width="182" height="36"/>

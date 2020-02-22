@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondMainViewController: UIViewController {
+class SecondMainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var headImage: UIImageView!
     @IBOutlet weak var backGroundImage: UIImageView!
@@ -25,9 +25,30 @@ class SecondMainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    @IBAction func changeHeadImageButton(_ sender: Any) {
+        openAlbum()
+    }
+    
+    
+    func openAlbum() {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = UIImagePickerController.SourceType.photoLibrary
+            picker.allowsEditing = true
+            self.present(picker, animated: true, completion: nil)
+        }
         
+        else {
+            print("读取相册错误")
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print(info)
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        headImage.image = image
+        picker.dismiss(animated: true, completion: nil)
     }
     
     
