@@ -33,8 +33,10 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
         let Camera = UIAlertAction(title: "拍摄照片", style: .default) { (_) in
             self.openCamera()
         }
+        let Cancel = UIAlertAction(title: "取消", style: .destructive, handler: nil)
         alert.addAction(Camera)
         alert.addAction(Album)
+        alert.addAction(Cancel)
         present(alert, animated: true, completion: nil)
     }
     
@@ -66,7 +68,7 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print(info)
+//        print(info)
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         headImage.image = image
         picker.dismiss(animated: true, completion: nil)
