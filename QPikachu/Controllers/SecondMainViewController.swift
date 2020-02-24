@@ -60,6 +60,8 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
             picker.delegate = self
             picker.sourceType = UIImagePickerController.SourceType.camera
             picker.allowsEditing = true
+            picker.cameraFlashMode = .auto
+            picker.showsCameraControls = true
             self.present(picker, animated: true, completion: nil)
         }
         else {
