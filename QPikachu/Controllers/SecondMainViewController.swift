@@ -71,7 +71,7 @@ class SecondMainViewController: UIViewController, UIImagePickerControllerDelegat
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 //        print(info)
-        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        let image = info[.originalImage] as! UIImage
         headImage.image = image
         picker.dismiss(animated: true, completion: nil)
     }
